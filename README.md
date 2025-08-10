@@ -1,2 +1,0 @@
-# nirmalsweb
-My portfolio website 
