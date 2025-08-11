@@ -414,7 +414,7 @@
               <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 24px; margin-right: 0.5rem;">
               WhatsApp Chat
             </a>
-            <a href="https://www.linkedin.com/in/nirmal-t-l-ravikumar" target="_blank" class="p-3 border-2 border-purple-500 text-purple-600 dark:text-purple-400 rounded-full hover:bg-purple-500 hover:text-white transition-all duration-300 transform hover:scale-105">
+            <a href="https://www.linkedin.com/in/nirmal-tl-ravikumar" target="_blank" class="p-3 border-2 border-purple-500 text-purple-600 dark:text-purple-400 rounded-full hover:bg-purple-500 hover:text-white transition-all duration-300 transform hover:scale-105">
               <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" style="width: 24px;">
             </a>
           </div>
@@ -551,10 +551,23 @@
     document.querySelectorAll('.animate-slide-up').forEach(el => { observer.observe(el); });
 
     // Contact Form Submission (if you have one)
-    document.querySelector('form')?.addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you for your message! This is a demo form. In a real implementation, this would send your message.');
-    });
+    // Using Formspree (free tier available)
+document.querySelector('form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+    method: 'POST',
+    body: new FormData(e.target),
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (response.ok) {
+    alert("Message sent!");
+    e.target.reset();
+  } else {
+    alert("Error sending message");
+  }
+});
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
