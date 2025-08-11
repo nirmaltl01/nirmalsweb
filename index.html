@@ -64,11 +64,11 @@
       </div>
     </div>
     <!-- Mobile Menu -->
-<div id="mobile-menu" class="mobile-menu md:hidden fixed top-0 right-0 h-full w-64 glass-effect transition-all duration-300 ease-in-out">
-  <!-- Close Button -->
-  <button id="mobile-menu-close" class="absolute top-4 right-4 text-white text-2xl hover:text-blue-300">
-    &times;
-  </button>
+    <div id="mobile-menu" class="mobile-menu md:hidden fixed top-0 right-0 h-full w-64 glass-effect transition-all duration-300 ease-in-out">
+      <!-- Close Button -->
+      <button id="mobile-menu-close" class="absolute top-4 right-4 text-white text-2xl hover:text-blue-300">
+        &times;
+      </button>
   
   <!-- Menu Items -->
   <div class="flex flex-col p-6 space-y-6 mt-16">
@@ -81,30 +81,54 @@
     <a href="#contact" class="nav-link-mobile text-white hover:text-blue-300 text-lg py-2 transition-colors duration-200">Contact</a>
   </div>
 </div>
-  </nav>
+</nav>
 
   <!-- Home Section -->
-  <section id="home" class="min-h-screen gradient-bg flex items-center justify-center relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-20 left-20 w-72 h-72 bg-white rounded-full animate-float"></div>
-      <div class="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full animate-float" style="animation-delay: -3s;"></div>
-    </div>
-    <div class="text-center z-10 px-4">
-      <div class="mb-8 animate-slide-up">
-        <div class="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 rounded-full shadow-2xl border-4 border-white overflow-hidden flex-shrink-0">
-          <img src="Snapchat-1189352749(1).jpg" alt="Nirmal TL" class="w-full h-full object-cover">
-        </div>
-        </div>
+<section id="home" class="min-h-screen gradient-bg flex items-center justify-center relative overflow-hidden">
+  <!-- Animated background circles -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-20 left-20 w-72 h-72 bg-white rounded-full animate-float"></div>
+    <div class="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full animate-float" style="animation-delay: -3s;"></div>
+  </div>
+
+  <!-- Content Container -->
+  <div class="text-center z-10 px-4 w-full max-w-4xl">
+    <!-- Profile Image -->
+    <div class="mb-8 animate-slide-up" style="animation-delay: 0.1s;">
+      <div class="w-40 h-40 md:w-48 md:h-48 mx-auto mb-6 rounded-full shadow-2xl border-4 border-white overflow-hidden">
+        <img 
+          src="Snapchat-1189352749(1).jpg" 
+          alt="Nirmal T L Ravikumar - AI & Data Science Student"
+          class="w-full h-full object-cover"
+          loading="eager"
+          width="192"
+          height="192"
+        >
       </div>
-      <h1 class="text-4xl md:text-7xl font-bold text-white mb-6 animate-slide-up" style="animation-delay: 0.1s;">Nirmal T L Ravikumar</h1>
-      <p class="text-lg md:text-2xl text-blue-100 mb-8 animate-slide-up" style="animation-delay: 0.2s;">AI &amp; Data Science Engineering Student</p>
-      <p class="text-base md:text-xl text-white font-medium mb-12 animate-slide-up" style="animation-delay: 0.4s;">"Innovating with Empathy. Leading with Logic."</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 0.6s;">
-        <a href="#about" class="px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">Learn More</a>
-        <a href="#contact" class="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105">Get In Touch</a>
-      </div>
     </div>
-  </section>
+
+    <!-- Headings -->
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-slide-up" style="animation-delay: 0.2s;">
+      Nirmal T L Ravikumar
+    </h1>
+    <p class="text-lg md:text-2xl text-blue-100 mb-8 animate-slide-up" style="animation-delay: 0.3s;">
+      AI &amp; Data Science Engineering Student
+    </p>
+    <p class="text-base md:text-xl text-white font-medium mb-12 animate-slide-up" style="animation-delay: 0.4s;" aria-hidden="true">
+      "Innovating with Empathy. Leading with Logic."
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 0.5s;">
+      <a href="#about" class="px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2">
+        Learn More
+      </a>
+      <a href="#contact" class="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2">
+        Get In Touch
+      </a>
+    </div>
+  </div>
+</section>
 
   <!-- About Section -->
   <section id="about" class="section-padding bg-white dark:bg-gray-800">
